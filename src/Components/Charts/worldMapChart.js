@@ -57,15 +57,15 @@ const WorldMapChartComponent = () => {
           },
 
           title: {
-            text: "Norwegian medals in the Summer Olympics (1996 - 2020)",
+            text: "",
             align: "left",
           },
 
-          subtitle: {
-            text:
-              'Source: <a href="https://en.wikipedia.org/wiki/Norway_at_the_Olympics">Wikipedia</a>',
-            align: "left",
-          },
+          // subtitle: {
+          //   text:
+          //     'Source: <a href="https://en.wikipedia.org/wiki/Norway_at_the_Olympics">Wikipedia</a>',
+          //   align: "left",
+          // },
 
           tooltip: {
             headerFormat: "",

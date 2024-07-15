@@ -22,10 +22,6 @@ import Avatar3 from "../../../assets/images/Avatar3.png";
 import Avatar4 from "../../../assets/images/Avatar4.png";
 import Avatar5 from "../../../assets/images/Avatar5.png";
 
-
-
-
-
 const columns = [
   {
     field: "customers",

@@ -8,7 +8,28 @@ import CardImg from "../../../assets/images/dashboard/card-img.png";
 import BrandIcon from "../../../assets/images/dashboard/brand-icon.png";
 import UsersIcon from "../../../assets/images/dashboard/users-icon.png";
 import WorldMapChartComponent from "Components/Charts/worldMapChart";
+import US from "../../../assets/images/dashboard/US.png";
+import IN from "../../../assets/images/dashboard/IN.png";
+import AU from "../../../assets/images/dashboard/AU.png";
+import CA from "../../../assets/images/dashboard/CA.png";
+import GB from "../../../assets/images/dashboard/GB.png";
+import LinearProgress, {
+  linearProgressClasses,
+} from "@mui/material/LinearProgress";
+import { styled } from "@mui/material/styles";
 import { Link } from "react-router-dom";
+
+const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
+  height: 8,
+  borderRadius: 5,
+  [`&.${linearProgressClasses.colorPrimary}`]: {
+    backgroundColor: "#EAECF0",
+  },
+  [`& .${linearProgressClasses.bar}`]: {
+    borderRadius: 5,
+    backgroundColor: "#7F56D9",
+  },
+}));
 
 class Dashboard extends Component {
   render() {
@@ -131,7 +152,90 @@ class Dashboard extends Component {
                 <Box className="card-title">
                   <h4>Active users location</h4>
                 </Box>
-                <WorldMapChartComponent />
+                <Grid container spacing={3} className="m-t-2">
+                  <Grid item xs={12} sm={6} md={8}>
+                    <WorldMapChartComponent />
+                  </Grid>
+                  <Grid item xs={12} sm={6} md={4}>
+                    <Box className="progress-bars">
+                      <Box className="progress-bar">
+                        <Box className="flag">
+                          <img src={US} alt="" />
+                        </Box>
+                        <Box className="bar-content">
+                          <h4>United States</h4>
+                          <Box className="bar ">
+                            <BorderLinearProgress
+                              variant="determinate"
+                              value={50}
+                            />
+                            <span>50%</span>
+                          </Box>
+                        </Box>
+                      </Box>
+                      <Box className="progress-bar">
+                        <Box className="flag">
+                          <img src={IN} alt="" />
+                        </Box>
+                        <Box className="bar-content">
+                          <h4>India</h4>
+                          <Box className="bar ">
+                            <BorderLinearProgress
+                              variant="determinate"
+                              value={50}
+                            />
+                            <span>30%</span>
+                          </Box>
+                        </Box>
+                      </Box>
+                      <Box className="progress-bar">
+                        <Box className="flag">
+                          <img src={GB} alt="" />
+                        </Box>
+                        <Box className="bar-content">
+                          <h4>United Kingdom</h4>
+                          <Box className="bar ">
+                            <BorderLinearProgress
+                              variant="determinate"
+                              value={50}
+                            />
+                            <span>20%</span>
+                          </Box>
+                        </Box>
+                      </Box>
+                      <Box className="progress-bar">
+                        <Box className="flag">
+                          <img src={AU} alt="" />
+                        </Box>
+                        <Box className="bar-content">
+                          <h4>Australia</h4>
+                          <Box className="bar ">
+                            <BorderLinearProgress
+                              variant="determinate"
+                              value={50}
+                            />
+                            <span>10%</span>
+                          </Box>
+                        </Box>
+                      </Box>
+                      <Box className="progress-bar">
+                        <Box className="flag">
+                          <img src={CA} alt="" />
+                        </Box>
+                        <Box className="bar-content">
+                          <h4>Canada</h4>
+                          <Box className="bar ">
+                            <BorderLinearProgress
+                              variant="determinate"
+                              value={50}
+                            />
+                            <span>50%</span>
+                          </Box>
+                        </Box>
+                      </Box>
+                    </Box>
+                  </Grid>
+                </Grid>
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
