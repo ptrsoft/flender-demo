@@ -1,0 +1,131 @@
+.customer-name-box {
+    background: linear-gradient(90deg, #B83660 0.01%, #F0827B 100%);
+    height: 200px;
+
+    .name-box {
+        height: 90px;
+        border: 1px solid #FFFFFF;
+
+        width: 300px;
+
+        .top-box {
+            height: 60px;
+            width: 100%;
+            line-height: 60px;
+            border-bottom: 1px solid #FFFFFF;
+
+            .name {
+                width: 80%;
+                border-right: 1px solid #FFFFFF;
+                color: #FFFFFF;
+                font-size: 28px;
+                display: flex;
+                justify-content: center;
+            }
+
+            svg {
+                font-size: 40px;
+                width: 20%;
+                color: #FFFFFF;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+
+        .bottom-box {
+            .sub-name {
+                color: #FFFFFF;
+                font-size: 18px;
+                line-height: 30px;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.details-box {
+    margin-top: 28px;
+
+    .inner-box {
+        border: 1px solid #EAECF0;
+        box-shadow: 0px 1px 2px 0px #1018280D;
+        border-radius: 12px;
+        min-height: 260px;
+
+        .header {
+            height: 50px;
+            padding: 18px;
+            border-bottom: 1px solid #EAECF0;
+
+            .box-title {
+                color: #101828;
+                font-weight: 600;
+                line-height: 24px;
+                font-size: 16px;
+            }
+        }
+
+        .body {
+            padding: 18px;
+            padding: 18px;
+
+            .body-name {
+                margin-bottom: 10px;
+
+                .sub-name {
+                    font-weight: 600;
+                    line-height: 24px;
+                    font-size: 13px;
+                    color: #475467;
+                    margin-left: 8px;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        .footer {
+            padding: 18px;
+            border-top: 1px solid #EAECF0;
+
+            svg {
+                color: #000000;
+                font-size: 20px;
+                margin-right: 22px;
+                cursor: pointer;
+            }
+        }
+
+        &.brand-overview {
+            min-height: auto;
+        }
+    }
+}
+
+.common-modal {
+    border-radius: 12px;
+
+    &:focus {
+        outline: none;
+    }
+
+    .modal-header {
+        height: 50px;
+        border-bottom: 2px solid #EAECF0;
+        padding: 18px;
+
+        .title {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #000000;
+        }
+    }
+    .modal-body{
+        height: calc(100% - 50px);
+    }
+}

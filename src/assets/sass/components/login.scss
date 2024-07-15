@@ -1,0 +1,106 @@
+.login-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../images/background-pattern.png");
+  background-size: cover;
+  background-size: 500px;
+  background-position-y: center;
+  background-position-x: center;
+  height: 650px;
+
+  form {
+    width: 100%;
+
+    .top-content {
+      text-align: center;
+      margin-bottom: 20px;
+      .titile {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+        h4 {
+          font-size: 25px;
+          color: #101828;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: 400;
+          color: #475467;
+        }
+      }
+    }
+    .form-group {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+
+      label {
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        color: #344054;
+        margin-bottom: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .form-control {
+        width: 100%;
+        font-size: 14px;
+        text-transform: capitalize;
+        font-weight: 400;
+        height: 40px;
+        border-radius: 6px;
+        color: #667085;
+        margin-bottom: 5px;
+        background: #ffffff;
+        border-color: #101828;
+        padding: 10px 5px !important;
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.0509803922);
+
+        .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+          width: 100%;
+          margin-left: -5px;
+          margin-right: -5px;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          line-height: 1.5;
+        }
+
+        .MuiSvgIcon-root {
+          color: #101828;
+        }
+      }
+    }
+    .check-box {
+      margin-bottom: 20px;
+      span {
+        padding: 5px;
+      }
+      .MuiTypography-root {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        color: #344054;
+      }
+      a {
+        font-size: 14px;
+        font-weight: 500;
+        color: #6941c6;
+      }
+    }
+    .login-btn {
+      width: 100%;
+      color: #ffffff;
+      background-color: #7f56d9;
+    }
+  }
+}

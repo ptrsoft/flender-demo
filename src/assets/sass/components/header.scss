@@ -1,0 +1,30 @@
+    .header-container {
+        height: 50px;
+        border-bottom: 1px solid #EAECF0;
+        display: flex;
+        align-items: center;
+        padding: 0px 35px 0px 25px;
+        margin-left: 230px;
+        position: fixed;
+        top: 0;
+        width: calc(100% - 230px);
+        z-index: 10;
+        background-color: #FFFFFF;
+
+        .page-title {
+            color: #101828;
+            font-size: 18px;
+        }
+
+        .right-side-part {
+            svg {
+                cursor: pointer;
+                margin-right: 20px;
+                color: #667085;
+            }
+
+            img {
+                cursor: pointer;
+            }
+        }
+    }

@@ -1,0 +1,117 @@
+.customer-page-container {
+    .total-customers-box {
+        padding: 18px;
+        box-shadow: 0px 1px 2px 0px #1018280D;
+        border: 1px solid #EAECF0;
+        border-radius: 12px;
+        width: 240px;
+
+        .number {
+            color: #101828;
+        }
+
+        .box-title {
+            margin-bottom: 8px;
+            color: #475467;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .percentage-box {
+            padding: 6px 10px;
+            border: 1px solid #ABEFC6;
+            background-color: #ECFDF3;
+            border-radius: 16px;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 600;
+            color: #067647;
+
+            svg {
+                font-size: 14px;
+                margin-right: 6px;
+                color: #17B26A;
+            }
+        }
+    }
+
+    .table-header-container {
+        margin: 20px 0px;
+
+        .search-bar {
+            margin: 0px;
+
+            svg {
+                top: 11px;
+            }
+
+            .search-input {
+                .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    .common-table {
+        .css-14mxsc7-MuiDataGrid-root {
+            border-radius: 12px;
+
+            .css-yrdy0g-MuiDataGrid-columnHeaderRow {
+                background-color: #F9FAFB !important;
+                height: 40px;
+                align-items: center;
+                display: flex;
+            }
+
+            .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+                color: #D0D5DD;
+            }
+
+            .MuiDataGrid-cell {
+                align-items: center;
+                display: flex;
+                text-align: left;
+                justify-content: start;
+            }
+            .MuiDataGrid-columnHeaderTitleContainer{
+                display: flex;
+                justify-content: left;
+            }
+        }
+
+        .customer-box {
+            img {
+                margin-right: 12px;
+            }
+
+            .customer-name {
+                font-size: 14px;
+                line-height: 20px;
+                color: #101828;
+                font-weight: 500;
+            }
+        }
+
+        .brand-number {
+            color: #101828;
+            font-weight: 500;
+            line-height: 20px;
+            font-size: 14px;
+        }
+        .action-icon{
+            svg{
+                cursor: pointer
+                ;
+                color: #475467;
+            }
+        }
+        .about-details{
+            span{
+                line-height: normal;
+            }
+        }
+
+    }
+}

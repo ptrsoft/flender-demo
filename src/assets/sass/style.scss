@@ -1,0 +1,9 @@
+@import "./components/header";
+@import "./components/sideBar.scss";
+@import "./common.scss";
+@import "./components/login.scss";
+
+//*********************Pages*********************//
+@import "./pages/dashboard.scss";
+@import "./pages/customers.scss";
+@import "./pages/customerDetails.scss";

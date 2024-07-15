@@ -1,0 +1,73 @@
+.side-bar-container {
+    width: 230px;
+    border-right: 1px solid #EAECF0;
+    height: 100%;
+    padding: 12px 12px 18px 23px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    
+
+    .top-pages-name {
+        .sidebar-page-container {
+            cursor: pointer;
+            height: 30px;
+            padding: 0px 12px;
+            margin-bottom: 10px;
+
+            img {
+                margin-right: 12px;
+                height: 16px;
+                width: 16px;
+            }
+
+            &.active {
+                box-shadow: 0px 0px 0px 4px #98A2B324;
+                border-radius: 6px;
+
+            }
+            .page-name{
+                font-weight: 600;
+                color: #344054;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .bottom-pages-name {
+        position: absolute;
+        bottom: 18px;
+        padding-top: 50px;
+        background-color: #ffffff;
+
+        hr {
+            margin: 18px 0px;
+            color: #EAECF0;
+        }
+
+        .user-name {
+            color: #344054;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .user-emailld {
+            color: #475467;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+
+        svg {
+            font-size: 18px;
+            cursor: pointer;
+        }
+    }
+
+
+
+}
