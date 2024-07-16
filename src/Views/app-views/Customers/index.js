@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Box, Button, Stack, TextField } from "@mui/material";
+import { Box, Button, Stack, TextField, IconButton } from "@mui/material";
 import ImportIcon from "../../../assets/images/dashboard/import-icon.png";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
@@ -32,7 +32,11 @@ const columns = [
     renderCell: (params) => (
       <Link to={`${appPrefix}/customer-details`}>
         <Box className="d-flex align-items-center customer-box">
-          <img src={params.row.customerIcon} alt="" style={{ marginRight: 8 }} />
+          <img
+            src={params.row.customerIcon}
+            alt=""
+            style={{ marginRight: 8 }}
+          />
           <span className="d-block customer-name">{params.value}</span>
         </Box>
       </Link>
@@ -47,9 +51,8 @@ const columns = [
     renderCell: (params) => {
       return (
         <Box className="about-details">
-          {params.value.map((e) => {
-            return <span className="d-block">{e}</span>;
-          })}
+          <Box className="title">{params.row.about}</Box>
+          <Box className="decription">{params.row.decription}</Box>
         </Box>
       );
     },
@@ -84,9 +87,13 @@ const columns = [
     resizable: false,
 
     renderCell: (params) => (
-      <Box className="action-icon">
-        <DeleteOutlineIcon style={{ marginRight: "40px" }} />
-        <EditIcon />
+      <Box className="edit-delete-btn">
+        <IconButton className="icon-btn" sx={{ mr: 2 }}>
+          <DeleteOutlineIcon />
+        </IconButton>
+        <IconButton className="icon-btn">
+          <EditIcon />
+        </IconButton>
       </Box>
     ),
   },
@@ -97,54 +104,56 @@ const rows = [
     id: 1,
     customerIcon: TableLogo,
     customers: "Namshi",
-    about: ["A Street Wear", "Basic Introduction about Namshi comes here"],
+    about: "A Street Wear",
+    decription: "Basic Introduction about Namshi comes here",
     total_brands: "8 Brands",
   },
   {
     id: 2,
     customerIcon: Avatar,
     customers: "Capsule",
-    about: ["Casual Wear", "Basic Introduction about Capsule comes here"],
+    about: "Casual Wear",
+    decription: "Basic Introduction about Capsule comes here",
     total_brands: "2 Brands",
   },
   {
     id: 3,
     customerIcon: Avatar1,
     customers: "Command R",
-    about: ["Active Wear", "Basic Introduction about Command R comes here"],
-
+    about: "Active Wear",
+    decription: "Basic Introduction about Command R comes here",
     total_brands: "5 Brands",
   },
   {
     id: 4,
     customerIcon: Avatar2,
     customers: "Hourglass",
-    about: ["Athleisure", "Basic Introduction about Hourglass comes here"],
-
+    about: "Athleisure",
+    decription: "Basic Introduction about Hourglass comes here",
     total_brands: "1 Brands",
   },
   {
     id: 5,
     customerIcon: Avatar3,
     customers: "Layers",
-    about: ["Formal Wear", "Basic Introduction about Layers comes here"],
-
+    about: "Formal Wear",
+    decription: "Basic Introduction about Layers comes here",
     total_brands: "2 Brands",
   },
   {
     id: 6,
     customerIcon: Avatar4,
     customers: "Quotient",
-    about: ["Kids Wear", "Basic Introduction about Quotient comes here"],
-
+    about: "Kids Wear",
+    decription: "Basic Introduction about Quotient comes here",
     total_brands: "1 Brands",
   },
   {
     id: 7,
     customerIcon: Avatar5,
     customers: "Sisyphus",
-    about: ["Business Casual", "Basic Introduction about Sisyphus comes here"],
-
+    about: "Business Casual",
+    decription: "Basic Introduction about Sisyphus comes here",
     total_brands: "4 Brands",
   },
 ];
@@ -251,6 +260,8 @@ class Customers extends Component {
             <DataGrid
               rows={rows}
               columns={columns}
+              disableRowSelectionOnClick
+              disableColumnMenu
               initialState={{
                 pagination: {
                   paginationModel: { page: 0, pageSize: 5 },

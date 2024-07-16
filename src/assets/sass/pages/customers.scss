@@ -1,117 +1,157 @@
 .customer-page-container {
-    .total-customers-box {
-        padding: 18px;
-        box-shadow: 0px 1px 2px 0px #1018280D;
-        border: 1px solid #EAECF0;
-        border-radius: 12px;
-        width: 240px;
+  .total-customers-box {
+    padding: 18px;
+    box-shadow: 0px 1px 2px 0px #1018280d;
+    border: 1px solid #eaecf0;
+    border-radius: 12px;
+    width: 240px;
 
-        .number {
-            color: #101828;
-        }
-
-        .box-title {
-            margin-bottom: 8px;
-            color: #475467;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 20px;
-        }
-
-        .percentage-box {
-            padding: 6px 10px;
-            border: 1px solid #ABEFC6;
-            background-color: #ECFDF3;
-            border-radius: 16px;
-            font-size: 14px;
-            line-height: 20px;
-            font-weight: 600;
-            color: #067647;
-
-            svg {
-                font-size: 14px;
-                margin-right: 6px;
-                color: #17B26A;
-            }
-        }
+    .number {
+      color: #101828;
     }
 
-    .table-header-container {
-        margin: 20px 0px;
-
-        .search-bar {
-            margin: 0px;
-
-            svg {
-                top: 11px;
-            }
-
-            .search-input {
-                .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
-                    height: 40px;
-                }
-            }
-        }
+    .box-title {
+      margin-bottom: 8px;
+      color: #475467;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
     }
 
-    .common-table {
-        .css-14mxsc7-MuiDataGrid-root {
-            border-radius: 12px;
+    .percentage-box {
+      padding: 6px 10px;
+      border: 1px solid #abefc6;
+      background-color: #ecfdf3;
+      border-radius: 16px;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 600;
+      color: #067647;
 
-            .css-yrdy0g-MuiDataGrid-columnHeaderRow {
-                background-color: #F9FAFB !important;
-                height: 40px;
-                align-items: center;
-                display: flex;
-            }
+      svg {
+        font-size: 14px;
+        margin-right: 6px;
+        color: #17b26a;
+      }
+    }
+  }
 
-            .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
-                color: #D0D5DD;
-            }
+  .table-header-container {
+    margin: 20px 0px;
 
-            .MuiDataGrid-cell {
-                align-items: center;
-                display: flex;
-                text-align: left;
-                justify-content: start;
-            }
-            .MuiDataGrid-columnHeaderTitleContainer{
-                display: flex;
-                justify-content: left;
-            }
+    .search-bar {
+      margin: 0px;
+
+      svg {
+        top: 11px;
+      }
+
+      .search-input {
+        .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .common-table {
+    > div {
+      border: none;
+    }
+
+    div {
+      &:focus {
+        outline: none !important;
+      }
+
+      &:focus-within {
+        outline: none !important;
+      }
+    }
+    .MuiDataGrid-columnHeaderTitleContainer {
+        display: flex;
+        justify-content: left;
+      }
+    .MuiDataGrid-columnHeaders {
+        text-align: left;
+        [role="row"] {
+          background-color: #f9fafb !important;
+          height: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
         }
 
-        .customer-box {
+        .MuiDataGrid-columnHeader {
+          border: none;
+          color: #475467;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 22px;
+          .MuiCheckbox-root {
+            color: #d0d5dd;
+          }
+          .Mui-checked {
+            color: #384cff;
+          }
+          &.MuiDataGrid-columnHeader--moving {
+            background: transparent;
+          }
+        }
+      }
+
+      .MuiDataGrid-row {
+        .MuiCheckbox-root {
+          color: #d0d5dd;
+        }
+        .Mui-checked {
+          color: #384cff;
+        }
+        .MuiDataGrid-cell {
+          display: inline-flex;
+          align-items: center;
+          justify-content: flex-start;
+          font-size: 14px;
+          font-weight: 400;
+          color: #101828;
+          line-height: normal;
+          .customer-box {
             img {
-                margin-right: 12px;
+              margin-right: 12px;
             }
 
             .customer-name {
-                font-size: 14px;
-                line-height: 20px;
-                color: #101828;
-                font-weight: 500;
+              font-size: 14px;
+              line-height: 20px;
+              color: #101828;
+              font-weight: 500;
             }
-        }
-
-        .brand-number {
+          }
+          .brand-number {
             color: #101828;
             font-weight: 500;
             line-height: 20px;
             font-size: 14px;
-        }
-        .action-icon{
-            svg{
-                cursor: pointer
-                ;
-                color: #475467;
+          }
+          .about-details {
+            .title {
+              font-size: 14px;
+              font-weight: 400;
+              color: #101828;
+              line-height: normal;
             }
-        }
-        .about-details{
-            span{
-                line-height: normal;
+            .decription {
+              font-size: 12px;
+              font-weight: 400;
+              color: #101828;
+              line-height: normal;
             }
+          }
+          .edit-delete-btn {
+            .icon-btn {
+            }
+          }
         }
-
-    }
+      }
+  }
 }
