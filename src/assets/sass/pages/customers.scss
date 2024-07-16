@@ -47,7 +47,7 @@
       }
 
       .search-input {
-        .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+        .MuiInputBase-root {
           height: 40px;
         }
       }
@@ -55,7 +55,7 @@
   }
 
   .common-table {
-    > div {
+    >div {
       border: none;
     }
 
@@ -68,90 +68,99 @@
         outline: none !important;
       }
     }
+
     .MuiDataGrid-columnHeaderTitleContainer {
-        display: flex;
-        justify-content: left;
-      }
+      display: flex;
+      justify-content: left;
+    }
+
     .MuiDataGrid-columnHeaders {
-        text-align: left;
-        [role="row"] {
-          background-color: #f9fafb !important;
-          height: 44px;
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-        }
+      text-align: left;
 
-        .MuiDataGrid-columnHeader {
-          border: none;
-          color: #475467;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 22px;
-          .MuiCheckbox-root {
-            color: #d0d5dd;
-          }
-          .Mui-checked {
-            color: #384cff;
-          }
-          &.MuiDataGrid-columnHeader--moving {
-            background: transparent;
-          }
-        }
+      [role="row"] {
+        background-color: #f9fafb !important;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
       }
 
-      .MuiDataGrid-row {
+      .MuiDataGrid-columnHeader {
+        border: none;
+        color: #475467;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+
         .MuiCheckbox-root {
           color: #d0d5dd;
+          padding-left: 0px;
         }
+
         .Mui-checked {
           color: #384cff;
         }
-        .MuiDataGrid-cell {
-          display: inline-flex;
-          align-items: center;
-          justify-content: flex-start;
-          font-size: 14px;
-          font-weight: 400;
-          color: #101828;
-          line-height: normal;
-          .customer-box {
-            img {
-              margin-right: 12px;
-            }
 
-            .customer-name {
-              font-size: 14px;
-              line-height: 20px;
-              color: #101828;
-              font-weight: 500;
-            }
+        &.MuiDataGrid-columnHeader--moving {
+          background: transparent;
+        }
+      }
+    }
+
+    .MuiDataGrid-row {
+      .MuiCheckbox-root {
+        color: #d0d5dd;
+      }
+
+      .Mui-checked {
+        color: #384cff;
+      }
+
+      .MuiDataGrid-cell {
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 14px;
+        font-weight: 400;
+        color: #101828;
+        line-height: normal;
+
+        .customer-box {
+          img {
+            margin-right: 12px;
           }
-          .brand-number {
+
+          .customer-name {
+            font-size: 14px;
+            line-height: 20px;
             color: #101828;
             font-weight: 500;
-            line-height: 20px;
+          }
+        }
+
+        .brand-number {
+          color: #101828;
+          font-weight: 500;
+          line-height: 20px;
+          font-size: 14px;
+        }
+
+        .about-details {
+          .title {
             font-size: 14px;
+            font-weight: 400;
+            color: #101828;
+            line-height: normal;
           }
-          .about-details {
-            .title {
-              font-size: 14px;
-              font-weight: 400;
-              color: #101828;
-              line-height: normal;
-            }
-            .decription {
-              font-size: 12px;
-              font-weight: 400;
-              color: #101828;
-              line-height: normal;
-            }
-          }
-          .edit-delete-btn {
-            .icon-btn {
-            }
+
+          .decription {
+            font-size: 12px;
+            font-weight: 400;
+            color: #101828;
+            line-height: normal;
           }
         }
       }
+    }
   }
 }

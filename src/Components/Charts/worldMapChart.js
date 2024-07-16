@@ -27,6 +27,7 @@ const WorldMapChartComponent = () => {
         const options = {
           chart: {
             map: mapData,
+            marginTop: -150, // Decrease top margin
           },
 
           legend: {
